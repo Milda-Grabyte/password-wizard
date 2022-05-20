@@ -1,0 +1,9 @@
+@import '/base';
+
+header {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $light-gray;
+}

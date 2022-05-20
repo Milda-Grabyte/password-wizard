@@ -1,0 +1,61 @@
+@import '/base';
+
+.progress-bar {
+  height: 80%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding-left:
+    li {
+      background: $dark-gray;
+      color: $white;
+      content: ' ';
+      counter-increment: list-item;
+      display: flex;
+      width: 50%;
+      height: 0.15rem;
+      position: relative;
+      z-index: 2;
+      &.active {
+        width: calc(50% + 0.5rem);
+      }
+      &.completed {
+        background: $primary-color;
+        &::before {
+          display: block;
+          background: $primary-color;
+          content: 'L';
+          line-height: 1.6rem;
+          transform: scaleY(-1) rotate(-225deg);
+        }
+      }
+      &::before {
+        background: $dark-gray;
+        color: $white;
+        border-radius: 50%;
+        content: counter(list-item);
+        height: 1.8rem;
+        width: 1.8rem;
+        line-height: 1.8rem;
+        font-weight: 600;
+        position: absolute;
+        text-align: center;
+        left: -0.9rem;
+        top: -0.85rem;
+      }
+      &.active::before {
+        background: $secondary-color;
+        color: $white;
+        border-radius: 50%;
+        content: counter(list-item);
+        height: 2.3rem;
+        width: 2.3rem;
+        line-height: 2.3rem;
+        top: -1.1rem;
+      }
+      &:last-child {
+        flex: 0 1 0;
+      }
+    }
+}
