@@ -16,7 +16,7 @@
       width: 50%;
       height: 0.15rem;
       position: relative;
-      z-index: 2;
+      z-index: 5;
       &.active {
         width: calc(50% + 0.5rem);
       }

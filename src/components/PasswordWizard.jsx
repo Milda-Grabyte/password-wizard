@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Header from './Header';
 
 function PasswordWizard() {
-  const [step, setStep] = useState(2)
+  const [step, setStep] = useState(2);
   return (
     <div className='wizard'>
       <Header step={step} />
