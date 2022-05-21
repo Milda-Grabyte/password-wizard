@@ -1,3 +1,23 @@
 {
-
+  "content.heading": "Crea tu Password Manager",
+  "step-1.purpose": "Guarda aquí todas tus contraseñas, datos o cualquier información, olvida las notas de papel y las aplicaciones no protegidas.",
+  "step-1.password": "Crea tu clave maestra: solo tú podrás accedes a tus secretos con ella.",
+  "step-1.functioning": "Cómo funciona",
+  "password.functioning.text": "En primer lugar, debes crear una contraseña diferente para tus pertenencias electrónicas. No podrás recuperar tu contraseña, así que recuérdala bien.",
+  "step-1.dataType": "Qué datos puedes guardar",
+  "step-1.dataType.text": "Por ejemplo, el número de tu tarjeta, el PIN y el PUC de tu teléfono móvil, el número de serie de alguno de tus dispositivos o cualquier información que necesites tener en lugar seguro.",
+  "step-2.CreatePassword": "Crea tu Contraseña Maestra.",
+  "step-2.RepeatPassword": "Repite tu Contraseña Maestra.",
+  "step-2.RepeatPassword.placeholder": "Repite tu contraseña",
+  "step-2.clue.text": "También puedes crear una pista que te ayude a recordar tu contraseña maestra.",
+  "step-2.clue": "Crea tu pista para recordar tu contraseña (opcional)",
+  "step-2.clue.placeholder": "Introduce tu pista",
+  "step-3.ok.heading": "¡Tu Password Manager ya está creado!",
+  "step-3.ok.text": "A partir de ahora tus datos están protegidos. ¡Pruébalo!",
+  "step-3.ko.heading": "Ha habido un error",
+  "step-3.ko.text": "No hemos podido modificar tu Contraseña Maestra. Inténtalo más tarde.",
+  "footer.button.cancel": "Cancelar",
+  "footer.button.next": "Siguiente",
+  "footer.button.ok": "Acceder",
+  "footer.button.ko": "Volver a Password Manager"
 }

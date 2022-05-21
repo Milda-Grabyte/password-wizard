@@ -1,3 +1,23 @@
 {
-  
+  "content.heading": "Create your Password Manager",
+  "step-1.purpose": "HEre you can save all your passwords or any other information. Forget notepads and unprotected applications.",
+  "step-1.password": "Crea tu clave maestra: solo tú podrás accedes a tus secretos con ella.",
+  "step-1.functioning": "How it workds",
+  "password.functioning.text": "First, you need to create a different password for your electronic data. You will not be able to retrieve the pasword, so make sure you memorize it.",
+  "step-1.dataType": "What information can I save?",
+  "step-1.dataType.text": "For example, you can save your card number, the PIN and the PUC of hyour cell phone, the serial number of some of your electronic devices or a y other information that you need to be kept in a safe place.",
+  "step-2.CreatePassword": "Create your Master Password.",
+  "step-2.RepeatPassword": "Repeat your Master Password.",
+  "step-2.RepeatPassword.placeholder": "Repeat your password",
+  "step-2.clue.text": "You can also create a clue that helps you remember your master password.",
+  "step-2.clue": "Create a clue to remind your password (optional)",
+  "step-2.clue.placeholder": "Type your clue",
+  "step-3.ok.heading": "Your Password Manager has been created!",
+  "step-3.ok.text": "From now on your data is safe. Give it a try!",
+  "step-3.ko.heading": "There has been an error",
+  "step-3.ko.text": "We have not been able to modify your Master Password. Please try again later.",
+  "footer.button.cancel": "Cancel",
+  "footer.button.next": "Next",
+  "footer.button.ok": "Enter",
+  "footer.button.ko": "Back to Password Manager"
 }
