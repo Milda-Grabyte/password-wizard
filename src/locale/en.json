@@ -17,7 +17,7 @@
   "step-3.ko.heading": "There has been an error",
   "step-3.ko.text": "We have not been able to modify your Master Password. Please try again later.",
   "footer.button.cancel": "Cancel",
-  "footer.button.next": "Next",
+  "footer.button.next": "Next  >",
   "footer.button.ok": "Enter",
   "footer.button.ko": "Back to Password Manager"
 }

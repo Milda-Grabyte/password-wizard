@@ -1,7 +1,7 @@
 import React from 'react';
 
 function FeedbackView() {
-    return (<></>)
+    return <div>STEP 3</div>;
 }
 
 export default FeedbackView;

@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function ProductInformation() {
-    return (<></>)
+    return (<div>STEP 1</div>)
 }
 
 export default ProductInformation;

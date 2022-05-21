@@ -1,7 +1,7 @@
 import React from 'react';
 
 function FormView() {
-    return (<></>)
+    return <div>STEP 2</div>;
 }
 
 export default FormView;
