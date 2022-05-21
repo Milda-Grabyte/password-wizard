@@ -1,5 +1,6 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
+import '../styles/button.scss';
 
 function Button({ type, onClick }) {
   const intl = useIntl();

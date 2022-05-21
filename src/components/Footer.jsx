@@ -16,7 +16,7 @@ function Footer({ step, setStep, success = false, isNextPermitted = true }) {
       <Button type={success === true ? 'ok' : 'ko'} onClick={success ? onReload : onBack} />
     );
   return (
-    <footer>
+    <footer className={step === 3 ? 'final' : ''}>
       {buttons}
     </footer>
   );
