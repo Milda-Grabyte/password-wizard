@@ -4,7 +4,7 @@ main {
   flex-grow: 1;
   position: relative;
   box-shadow: 0px -1px 4px 1px $dark-gray;
-  &::after {
+  &::before {
     position: absolute;
     z-index: 0;
     content: "";
@@ -17,13 +17,13 @@ main {
     box-shadow: 0.125rem -0.125rem 0.25rem 0 $dark-gray;
     clip-path: inset(-0.25rem -0.25rem 0 0 );
   }
-  &.step-1::after {
+  &.step-1::before {
     left: 41.8%;
   }
-  &.step-2::after {
+  &.step-2::before {
     left: 48.7%;
   }
-  &.step-3::after {
+  &.step-3::before {
     left: 56.7%;
   }
 }
