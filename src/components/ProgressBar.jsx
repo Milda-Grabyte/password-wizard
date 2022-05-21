@@ -11,7 +11,7 @@ function ProgressBar({ selectedStep }) {
   }
 
   const listItems = [...Array(3)].map((_,i) =>
-    <li className={completionStatus(i + 1, selectedStep)} />
+    <li key={i} className={completionStatus(i + 1, selectedStep)} />
   );
     
   return (
