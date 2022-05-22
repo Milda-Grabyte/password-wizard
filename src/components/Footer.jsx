@@ -2,8 +2,11 @@ import React from 'react';
 import Button from './Button';
 import '../styles/footer.scss';
 
-function Footer({ step, setStep, success = false, isDisabled }) {
-  const onForward = () => setStep(++step);
+function Footer({ step, setStep, success = false, isDisabled, setIsDisabled }) {
+  const onForward = () => {
+    setStep(++step);
+    setIsDisabled(true);
+  };
   const onBack = () => setStep(step !== 1 ? --step : window.location.reload());
   const onReload = () => window.location.reload();
   const buttons =
