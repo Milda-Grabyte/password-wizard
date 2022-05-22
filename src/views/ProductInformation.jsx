@@ -5,7 +5,7 @@ import '../styles/productInformation.scss';
 import paymentImg from '../assets/img/payment-method.png';
 import securityImg from '../assets/img/web-security.png';
 
-function ProductInformation({setIsDisabled, isDisabled}) {
+function ProductInformation({setIsDisabled}) {
     const intl = useIntl();
 
     function handleCheck(isChecked) {

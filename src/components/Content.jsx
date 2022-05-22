@@ -4,7 +4,7 @@ import ProductInformation from '../views/ProductInformation';
 import FormView from '../views/FormView';
 import FeedbackView from '../views/FeedbackView';
 
-function Content({ step, setStep, isDisabled, setIsDisabled }) {
+function Content({ step, setStep, setIsDisabled, setUserData, userData }) {
   const [view, setView] = useState(<ProductInformation />);
 
   useEffect(() => {
@@ -12,7 +12,11 @@ function Content({ step, setStep, isDisabled, setIsDisabled }) {
   }, [step]);
 
   function setStep(step) {
-    step === 1 ? setView(<ProductInformation isDisabled={isDisabled}setIsDisabled={setIsDisabled}/>) : step === 2 ? setView(<FormView />) : setView(<FeedbackView />)
+    step === 1
+      ? setView(<ProductInformation setIsDisabled={setIsDisabled} />)
+      : step === 2
+        ? setView(<FormView setIsDisabled={setIsDisabled} setUserData={setUserData} userData={userData} />)
+        : setView(<FeedbackView />);
   }
 
   return (
