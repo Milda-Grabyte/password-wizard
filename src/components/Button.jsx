@@ -2,9 +2,12 @@ import React from 'react';
 import { useIntl } from 'react-intl';
 import '../styles/button.scss';
 
-function Button({ type, onClick }) {
+function Button({ type, onClick, isDisabled }) {
   const intl = useIntl();
-  return <input type='button' onClick={onClick} className={`button ${type}`} value=
+
+  const disabledClass = isDisabled ? 'disabled' : '';
+
+  return <input type='button' disabled={isDisabled} onClick={onClick} className={`button ${type} ${disabledClass}`} value=
   {`${intl.formatMessage({ id: `footer.button.${type}` })}`} />
 }
 
