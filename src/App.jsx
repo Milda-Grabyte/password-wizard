@@ -7,7 +7,7 @@ function App() {
   const [delayedComponent, setDelayedComponent] = useState(<></>);
 
   useEffect(() => {
-    setTimeout(() => setDelayedComponent(<PasswordWizard />), 3000);
+    setTimeout(() => setDelayedComponent(<PasswordWizard />), 2000);
   }, []);
 
   return (
