@@ -17,7 +17,8 @@ function FormView({setIsDisabled, setUserData}) {
   });
 
   useEffect(() => {
-    setUserData({password: password, clue: clue });
+    setUserData({ password: password, clue: clue });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [password, clue]);
   
   function validatePassword(password) {

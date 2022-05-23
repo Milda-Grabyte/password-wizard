@@ -7,8 +7,13 @@ function Button({ type, onClick, isDisabled }) {
 
   const disabledClass = isDisabled ? 'disabled' : '';
 
-  return <input type='button' disabled={isDisabled} onClick={onClick} className={`button ${type} ${disabledClass}`} value=
-  {`${intl.formatMessage({ id: `footer.button.${type}` })}`} />
+  return <input
+    type='button'
+    disabled={isDisabled}
+    onClick={onClick}
+    className={`button ${type} ${disabledClass}`}
+    value={`${intl.formatMessage({ id: `footer.button.${type}` })}`}
+  />
 }
 
 export default Button;
