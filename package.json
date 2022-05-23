@@ -16,7 +16,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "cy:open": "cypress open",
+    "cy:test": "cypress run",
+    "test:ci": "start-server-and-test start http-get://localhost:3000 cy:test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,7 +37,9 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/cypress": "^8.0.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "sass": "^1.51.0"
+    "sass": "^1.51.0",
+    "start-server-and-test": "^1.14.0"
   }
 }
