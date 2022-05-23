@@ -4,11 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { IntlProvider } from 'react-intl';
-import locale from './locale/index'
-import spanish from './locale/es.json'
+import { locale, language } from './locale/index'
 
 ReactDOM.render(
-  <IntlProvider locale={locale} messages={spanish}>
+  <IntlProvider locale={locale} defaultLocale='en' messages={language}>
     <App />
   </IntlProvider>,
   document.getElementById('root')
