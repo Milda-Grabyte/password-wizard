@@ -18,7 +18,10 @@ function Footer({ step, setStep, isDisabled, setIsDisabled, result }) {
         <Button type='next' isDisabled={isDisabled} onClick={onForward} />
       </>
     ) : (
-      <Button type={result.success === true ? 'ok' : 'ko'} onClick={result.success ? onReload : onBack} />
+        <Button
+          type={result.success === true ? 'ok' : 'ko'}
+          onClick={result.success ? onReload : onBack}
+        />
     );
   
   return (

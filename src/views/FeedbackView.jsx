@@ -29,7 +29,11 @@ function FeedbackView({userData, setResult}) {
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     
-    const content = loading === true ? <Loader /> : <FeedbackCard feedbackType={feedbackType}/>;
+    const content =
+        loading === true
+        ? <Loader />
+        : <FeedbackCard feedbackType={feedbackType} />;
+    
     return <div className='content__feedback'>{content}</div>;
 }
 
