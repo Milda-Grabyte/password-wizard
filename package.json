@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "i18next": "^17.0.16",
+    "i18next-browser-languagedetector": "^3.0.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-i18next": "^10.12.5",
+    "react-icons": "^4.3.1",
+    "react-intl": "^5.25.1",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "cy:open": "cypress open",
+    "cy:test": "cypress run",
+    "test:ci": "start-server-and-test start http-get://localhost:3000 cy:test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +35,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "sass": "^1.51.0",
+    "start-server-and-test": "^1.14.0"
   }
 }

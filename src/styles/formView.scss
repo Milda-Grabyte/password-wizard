@@ -1,0 +1,84 @@
+@import '/base';
+
+.content__form {
+  &-description {
+    margin-top: 3rem;
+  }
+  &-password {
+    display: flex;
+    flex-wrap: wrap;
+    &--warning {
+      flex-grow: 2;
+      color: $primary-color;
+      &-container {
+        height: 2rem;
+        width: 100%;
+      }
+    }
+  }
+  &-requirements {
+    display: flex;
+    align-items: center;
+    > p {
+      margin-left: 0.5rem;
+    }
+  }
+  span {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $primary-color;
+      padding-bottom: 0.125rem;
+  }
+  label {
+    position: relative;
+    > i {
+      position:absolute;
+      top: 2.45rem;
+      left: 12rem;
+      color: $secondary-color;
+    }
+  }
+  &-clue, label {
+    display:flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $secondary-color;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+  }
+  &-clue{
+    margin-bottom: 0.5rem;
+  }
+  &-clue--count {
+    text-align: right;
+    font-weight: 700;
+    color: $light-gray;
+    &.alert {
+      color: $primary-color;
+    }
+  }
+  input {
+    height: 2.4rem;
+    width: 13.6rem;
+    background: none;
+    padding: 0.5rem;
+    border: 0.1rem solid $light-gray;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: 700;
+    color: $dark-gray;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 0.15rem;
+    &#clue--input {
+      width: 100%;
+    }
+    &#password--input, &#password-repeat--input {
+      margin-top: 0.5rem;
+    }
+    &::placeholder {
+      color: $dark-gray;
+    }
+  }
+}

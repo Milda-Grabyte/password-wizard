@@ -1,0 +1,24 @@
+
+@import 'styles/base';
+@import 'styles/keyframes';
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+    > img {
+    position: absolute;
+    top: calc((100vh - 300px)/2);
+    left: calc((100vw - 500px)/2);
+    animation-name: logoTransformer;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+  }
+    > div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}

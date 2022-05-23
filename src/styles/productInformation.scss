@@ -1,0 +1,54 @@
+@import '/base';
+
+.content__product-info {
+   > .visual-info {
+     margin-top: 2rem;
+     display: flex;
+     gap: 5%;
+     > div {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       width: 50%;
+       > p {
+         width: 100%;
+         height: 100%;
+         text-align: center;
+         margin-bottom: 0;
+       }
+     }
+     img {
+       align-self: center;
+       height: 5rem;
+     }
+   }
+    label {
+      font-size: 0.7rem;
+      color: $secondary-color;
+      display:flex;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+    input {
+      appearance: none;
+      font: inherit;
+      color: $secondary-color;
+      width: 1.2rem;
+      height: 1.2rem;
+      border: 0.15rem solid $secondary-color;
+      border-radius: 0.15rem;
+      transform: translateY(-0.075em);
+      margin: 0 0.5rem 0 0;
+      position: relative;
+      &:checked::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0.1rem;
+        left: 0.1rem;
+        width: 0.71rem;
+        height: 0.71rem;
+        background-color: #06aa6d;
+      }
+   }
+}

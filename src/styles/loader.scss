@@ -1,0 +1,11 @@
+@import '/base';
+@import '/keyframes';
+
+.loader {
+  border: 0.5rem solid $light-gray;
+  border-radius: 50%;
+  border-top: 0.5rem solid $secondary-color;
+  width: 2rem;
+  height: 2rem;
+  animation: spinner 3s linear infinite;
+}

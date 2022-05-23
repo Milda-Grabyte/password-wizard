@@ -1,0 +1,34 @@
+@import '/base';
+
+.button {
+  font-family: 'Quicksand', sans-serif;
+  color: $white;
+  font-weight: 700;
+  font-size: 0.9rem;
+  background-color: $secondary-color;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.2rem;
+  &.disabled {
+    opacity: 0.8;
+  }
+  &.cancel {
+    background-color: $white;
+    color: $secondary-color;
+    &:hover {
+      outline: 0.125rem solid $secondary-color;
+    }
+  }
+  &.ok, &.ko {
+    font-size: 0.75rem;
+    background-color: $white;
+    color: $primary-color;
+    padding: 0.75rem 1.35rem;
+    &:hover {
+      outline: 0.1rem solid $primary-color;
+    }
+  }
+}
